@@ -10,7 +10,7 @@ body {
 
 .weather-container {
     text-align: center;
-    background-color: rgba(242, 169, 235, 0.8);
+    background-color: rgba(255, 219, 250, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,8 +28,8 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #c21158;
-    color: white;
+    background-color: #e801c5;
+    color: rgb(246, 230, 246);
     font-size: 16px;
     cursor: pointer;
     transition: transform 0.2s;
@@ -88,10 +88,33 @@ button:hover {
 
 .rain {
     animation: rain-fall 1s linear infinite;
-    color: #1d05a5;
+    color: #00BFFF;
 }
 
 .snow {
     animation: snow-fall 3s linear infinite;
     color: #F0FFFF;
+}
+
+#flower {
+    display: inline-block;
+    animation: flower-move 2s ease-in-out infinite;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+@keyframes flower-move {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a img {
+    transition: filter 0.3s;
+}
+
+.social-links a:hover img {
+    filter: hue-rotate(300deg);
 }
