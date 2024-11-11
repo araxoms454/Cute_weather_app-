@@ -28,7 +28,7 @@ _Interactive UI: Includes animated buttons and an animated flower next to the ti
 Clone this repository to your local machine.
 
 #bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/araxoms454/weather-app.git
 Navigate to the project directory.
 
 bash
